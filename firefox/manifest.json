@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Real Name Resolver",
+  "version": "1.1",
+  "description": "Replace cryptic GitHub IDs with real names from hovercards.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "96": "icons/icon-96.png"
+  }
+}
