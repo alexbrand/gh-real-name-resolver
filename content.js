@@ -19,6 +19,11 @@ processLinks(document.body);
 function processLinks(root) {
   const userLinks = root.querySelectorAll('a[data-hovercard-type="user"]');
   userLinks.forEach(link => {
+    // Skip link if it contains an <img> with class 'avatar'
+    if (link.querySelector('img.avatar')) {
+      return;
+    }
+
     const hovercardUrl = link.getAttribute('data-hovercard-url');
     const username = link.textContent.trim();
     if (hovercardUrl) {

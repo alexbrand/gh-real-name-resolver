@@ -22,6 +22,11 @@ function processLinks(root) {
   // Select all user links with hovercard
   const userLinks = root.querySelectorAll('a[data-hovercard-type="user"], a[data-hovercard-url][href*="/commits?author="]');
   userLinks.forEach(link => {
+    // Skip link if it contains an <img> with class 'avatar'
+    if (link.querySelector('img.avatar')) {
+      return;
+    }
+
     const hovercardUrl = link.getAttribute('data-hovercard-url');
     // Extract userId from hovercardUrl (e.g., /users/USER_ID/hovercard)
     const userId = hovercardUrl?.split('/')[2]; 
