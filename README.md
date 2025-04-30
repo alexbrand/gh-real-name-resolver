@@ -10,7 +10,7 @@ To enable Developer Mode in Chrome and install extensions outside the Chrome Web
 
 Here's a step-by-step guide:
 
-1. Open the Chrome Extensions page: Type chrome://extensions/ in the Chrome address bar and press Enter. 
+1. Open the Chrome Extensions page: Type `chrome://extensions/` in the Chrome address bar and press Enter. 
 1. Enable Developer mode: Locate the "Developer mode" toggle switch in the top right corner and click it to enable it. 
 1. Load the unpacked extension: Click the "Load unpacked" button. 
 1. Select the extension folder: Browse to the location of the extension folder and click "Select Folder" to confirm and load the extension. 
